@@ -1001,6 +1001,9 @@ asmlinkage long sys_pidfd_send_signal(int pidfd, int sig,
 				       siginfo_t __user *info,
 				       unsigned int flags);
 
+
+asmlinkage sys_mycall(void);
+
 /*
  * Architecture-specific system calls
  */
@@ -1222,6 +1225,8 @@ asmlinkage long sys_old_mmap(struct mmap_arg_struct __user *arg);
  */
 asmlinkage long sys_ni_syscall(void);
 
+
+
 #endif /* CONFIG_ARCH_HAS_SYSCALL_WRAPPER */
 
 
@@ -1420,5 +1425,6 @@ long ksys_old_shmctl(int shmid, int cmd, struct shmid_ds __user *buf);
 long compat_ksys_semtimedop(int semid, struct sembuf __user *tsems,
 			    unsigned int nsops,
 			    const struct old_timespec32 __user *timeout);
+
 
 #endif
