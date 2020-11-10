@@ -1,0 +1,1 @@
+cmd_/home/gon/workspace/cau-linux/linked-list/linked-list.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/gon/workspace/cau-linux/linked-list/linked-list.ko /home/gon/workspace/cau-linux/linked-list/linked-list.o /home/gon/workspace/cau-linux/linked-list/linked-list.mod.o;  true
