@@ -1,4 +1,4 @@
-obj-m := linked-list.o
+obj-m := rb-tree.o
 
 KDIR := /lib/modules/$(shell uname -r)/build
 
